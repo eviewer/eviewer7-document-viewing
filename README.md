@@ -22,7 +22,7 @@ Follow the steps below to run the eViewer Document Viewing Sample.
 
 - Enter a document URL or choose a file to view it.
 
-![](https://eviewer.net/wp-content/uploads/2025/11/eViewer-Screenshot.png)
+<img src="https://eviewer.net/wp-content/uploads/2025/11/eViewer-Screenshot.png" alt="eViewer Screenshot" style="border: 2px solid #000;">
 
 Once the document is loaded, explore the various features available in
 the viewer.
@@ -32,85 +32,64 @@ the viewer.
 Below is an overview of the key directories and files included in the
 project:
 
-> └── view-document/
->
-> ├── assets/
->
-> ├── js/
->
-> ├── scripts/
->
-> ├── viewer/
->
-> └── eViewerPage.html
->
-> ![](https://eviewer.net/wp-content/uploads/2025/11/Project-Structure.png)
+<div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
+
+<pre>
+└── view-document/
+    ├── assets/
+    ├── js/
+    ├── scripts/
+    ├── viewer/
+    └── eViewerPage.html
+</pre>
+
+</div>
+
+> <img src="https://eviewer.net/wp-content/uploads/2025/11/Project-Structure.png" alt="Project Structure" style="border: 2px solid #000;">
 
 **Directory Details:**
 
 - **view-document/**
 
-The root directory contains all the scripts and markup files required to
-launch the eViewer browser application.
+  The root directory contains all the scripts and markup files required to
+  launch the eViewer browser application.
 
-- **assets/**:
-
-> Contains essential configuration JSON files, such as
-
-- **userPreferences.json**- Defines default viewer preferences.
-
-- **annotationProperties.json**- Defines default annotation
-  configurations.
-
-- **stamp.json**- Stores predefined and custom (image/text) stamp
-  data.
+- **assets/**
+  > Contains essential configuration JSON files, such as:
+  - **userPreferences.json** – Defines default viewer preferences.
+  - **annotationProperties.json** – Defines default annotation configurations.
+  - **stamp.json** – Stores predefined and custom (image/text) stamp data.
 
 > **Note**: These preferences can also be managed at runtime using the
 > preference service class APIs.
+>
+> - [**Set User Preferences**](https://eviewer.net/developer-guide/#Set_User_Preferences)
+> - [**Get User Preferences**](https://eviewer.net/developer-guide/#Get_User_Preferences)
 
-- [**Set User
-  Preferences**](https://eviewer.net/developer-guide/#Set_User_Preferences)
+- **js/**
 
-- [**Get User
-  Preferences**](https://eviewer.net/developer-guide/#Get_User_Preferences)
+  > Includes the main script files for viewer functionality.
 
-- **js/**:
+  - **events.js** – Handles viewer callback events.
+  - **eViewer7.js** – Consumed by JavaScript frameworks for embedding the viewer.
+  - **eViewer7_angular.js** – Consumed by Angular applications for embedding the viewer.
+  - **eViewer7_browser.js** – Consumed by plain JavaScript HTML pages for embedding the viewer.
 
-> Includes the main script files for viewer functionality.
+- **scripts/**
 
-- **events.js**: Handles viewer callback events.
+  - **load-scripts.js** – Defines code that consumes eViewer v7 APIs for document rendering and viewer preferences.
 
-- **eViewer7.js**- Consumed by JavaScript frameworks for embedding the
-  viewer.
+- **viewer/**
 
-- **eViewer7_angular.js**- Consumed by Angular applications for
-  embedding the viewer.
+  > Contains the core compiled viewer script files.
 
-- **eViewer7_browser.js**: Consumed by plain JavaScript HTML pages for
-  embedding the viewer.
+  - **runtime.js**
+  - **polyfills.js**
+  - **scripts.js**
+  - **main.js**
+  - **eViewerPage.html**:
 
-- **scripts/**:
-
-- **load-scripts.js**: Defines code that consumes eViewer v7 APIs for
-  document rendering and viewer preferences.
-
-- **viewer/**:
-
-> Contains the core compiled viewer script files.
-
-- **runtime.js**
-
-- **polyfills.js**
-
-- **scripts.js**
-
-- **main.js**
-
-- **eViewerPage.html**:
-
-> The main HTML entry point for the application. It assembles the
-> complete viewer by loading all required scripts, styles, and assets
-> from the directories listed above.
+    The main HTML entry point for the application. It assembles the complete viewer by loading all required scripts, styles, and assets from the directories listed above.
 
 ## **API Documentation**
 
@@ -143,6 +122,7 @@ refer to the official API documentation:
 ## **Try the Demo**
 
 Experience a free live demo at
+[**Live Demo**](https://mst2019b2.eastus.cloudapp.azure.com:8443/eviewer7-document-viewing)
 
 ## **License**
 

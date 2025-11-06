@@ -53,7 +53,7 @@ function loadDefaultComponent() {
 
 function uploadPdfDocument() {
   const BASE_URL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}`;
-  let docUrl = `${BASE_URL}/view_document/js/Apple.pdf`;
+  let docUrl = `${BASE_URL}/sample_files/sample.pdf`;
   let saveUrl = "";
   let serverUrl = "";
   let annotationUrl = null;
