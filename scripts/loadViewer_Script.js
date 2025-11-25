@@ -114,7 +114,7 @@ function uploadPdfDocument() {
 
 async function loadUserPreferences() {
   try {
-    const response = await fetch("/view_document/assets/UserPreferences.json");
+    const response = await fetch("/eviewer7-document-viewing/assets/UserPreferences.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -130,7 +130,7 @@ async function loadUserPreferences() {
 
 async function loadShortcutPreferences() {
   try {
-    const response = await fetch("/view_document/assets/shortcutkeys.json");
+    const response = await fetch("/eviewer7-document-viewing/assets/shortcutkeys.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -147,7 +147,7 @@ async function loadShortcutPreferences() {
 async function loadAnnPropertyPreferences() {
   try {
     const response = await fetch(
-      "/view_document/assets/annotationProperty.json"
+      "/eviewer7-document-viewing/assets/annotationProperty.json"
     );
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
